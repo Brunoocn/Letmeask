@@ -10,6 +10,8 @@ type User = {
 type AuthContextType = {
   user: User | undefined;
   singInWithGoogle: () => Promise<void>;
+  singInWithGithub: () => Promise<void>;
+  handleSingOut: () => Promise<void>;
 };
 
 type AuthContextProviderProps = {
@@ -42,6 +44,27 @@ export function AuthContextProvider(props: AuthContextProviderProps) {
     };
   }, []);
 
+  async function singInWithGithub() {
+    const provider = new firebase.auth.GithubAuthProvider();
+
+    const result = await auth.signInWithPopup(provider);
+
+    auth.signInWithPopup(provider);
+    if (result.user) {
+      const { displayName, photoURL, uid } = result.user;
+
+      if (!displayName || !photoURL) {
+        throw new Error("Missing Information from Google Account");
+      }
+
+      setUser({
+        id: uid,
+        name: displayName,
+        avatar: photoURL,
+      });
+    }
+  }
+
   async function singInWithGoogle() {
     const provider = new firebase.auth.GoogleAuthProvider();
 
@@ -63,8 +86,12 @@ export function AuthContextProvider(props: AuthContextProviderProps) {
     }
   }
 
+  async function handleSingOut() {
+    firebase.auth().signOut();
+  }
+
   return (
-    <AuthContext.Provider value={{ user, singInWithGoogle }}>
+    <AuthContext.Provider value={{ user, singInWithGoogle, singInWithGithub, handleSingOut }}>
       {props.children}
     </AuthContext.Provider>
   );
