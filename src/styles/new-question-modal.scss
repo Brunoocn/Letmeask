@@ -1,0 +1,56 @@
+.container {
+  text-align: center;
+
+  img {
+    margin-bottom: 1.5rem;
+  }
+
+  h2 {
+    font-family: Poppins, sans-serif;
+    font-weight: Bold;
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: #29292e;
+  }
+
+  p {
+    margin-bottom: 2.5rem;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+
+    .button-cancel {
+      background: #dbdcdd;
+      border-radius: 0.5rem;
+      padding: 1rem 2rem;
+      color: #737380;
+      font-size: 1rem;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      cursor: pointer;
+      transition: filter 0.2s;
+
+      &:hover {
+        filter: brightness(1.1);
+      }
+    }
+
+    .button-delete {
+      background: #e73f5d;
+      border-radius: 0.5rem;
+      padding: 1rem 2.375rem;
+      color: #fefefe;
+      font-family: "Poppins", sans-serif;
+      cursor: pointer;
+      transition: filter 0.2s;
+
+      &:hover {
+        filter: brightness(1.2);
+      }
+    }
+  }
+}
