@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import { useAuth } from "../hooks/useAuth";
 import { database } from "../services/firebase";
 
-
 import { Button } from "../components/Button";
 import { RoomCode } from "../components/RoomCode";
 
@@ -12,6 +11,7 @@ import logoImg from "../assets/logo.svg";
 import "../styles/room.scss";
 import { Question } from "../components/Question";
 import { useRoom } from "../hooks/useRoom";
+import { SignOutButton } from "../components/SingOutButton";
 
 type RoomParams = {
   id: string;
@@ -71,7 +71,10 @@ export function Room() {
       <header>
         <div className="content">
           <img src={logoImg} alt="Letmeask" />
-          <RoomCode code={roomId} />
+          <div>
+            <RoomCode code={roomId} />
+            <SignOutButton />
+          </div>
         </div>
       </header>
 
