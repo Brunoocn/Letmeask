@@ -30,7 +30,7 @@ Some features I added to the project:
 
 ```bash
 # Open a terminal and copy this repository with the command
-git clone https://github.com/Brunoocn/Dtmoney.git
+git clone https://github.com/Brunoocn/Letmeask.git
 # or use the download option.
 # Open the folder with
 cd Letmeask
