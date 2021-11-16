@@ -11,7 +11,7 @@ import logoImg from "../assets/logo.svg";
 import "../styles/room.scss";
 import { Question } from "../components/Question";
 import { useRoom } from "../hooks/useRoom";
-import { SignOutButton } from "../components/SingOutButton";
+import { SignOutButton } from '../components/SignOutButton';
 
 type RoomParams = {
   id: string;
