@@ -18,7 +18,7 @@ This project was developed with the following technologies:
 
 ## 🚀 Features added by me 
 
-Some features I added to the project
+Some features I added to the project:
 
 - Login with github<br/>
 - Logout Feature<br/>
