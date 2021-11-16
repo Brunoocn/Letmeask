@@ -18,11 +18,11 @@ This project was developed with the following technologies:
 
 ## 🚀 Features added by me 
 
--Login with github
--Logout Feature
--Modals
--Responsive(In process)
--PWA(In process)
+-Login with github<br/>
+-Logout Feature<br/>
+-Modals<br/>
+-Responsive(In process)<br/>
+-PWA(In process)<br/>
 
 ## ✈️ Installation and use
 
