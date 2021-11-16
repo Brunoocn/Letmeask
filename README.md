@@ -23,8 +23,8 @@ Some features I added to the project:
 - Login with github<br/>
 - Logout Feature<br/>
 - Modals<br/>
-- Responsive(In process)<br/>
-- PWA(In process)<br/>
+- Responsive (In process)<br/>
+- PWA (In process)<br/>
 
 ## ✈️ Installation and use
 
