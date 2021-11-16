@@ -1,9 +1,9 @@
 <p align="center">
-  <img alt="Letmeask" src=".github/logo.svg" width="160px">
+  <img alt="Letmeask" src="src/assets/logo.svg" width="160px">
 </p>
 
 <h1 align="center">
-    <img alt="Letmeask" src=".github/github.png" />
+    <img alt="Letmeask" src="src/assets/github.png" />
 </h1>
 
 <br>
