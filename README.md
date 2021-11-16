@@ -24,6 +24,7 @@ Some features I added to the project:
 - Logout Feature<br/>
 - Modals<br/>
 - Responsive (In process)<br/>
+- Styled Components (In process) <br/>
 - PWA (In process)<br/>
 
 ## ✈️ Installation and use
