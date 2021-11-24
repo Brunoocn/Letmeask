@@ -44,12 +44,6 @@ export function AdminRoom() {
     history.push("/");
   }
 
-  // async function handleDeleteQuestion(questionId: string) {
-  //   if (window.confirm("Tem certeza que deseja excluir essa pergunta")) {
-  //     await database.ref(`rooms/${roomId}/questions/${questionId}`).remove();
-  //   }
-  // }
-
   async function handleCheckQuestionAsAnswered(questionId: string) {
     await database.ref(`rooms/${roomId}/questions/${questionId}`).update({
       isAnswered: true,

@@ -11,7 +11,7 @@ import logoImg from "../assets/logo.svg";
 import "../styles/room.scss";
 import { Question } from "../components/Question";
 import { useRoom } from "../hooks/useRoom";
-import { SignOutButton } from '../components/SignOutButton';
+import { SignOutButton } from "../components/SignOutButton";
 
 type RoomParams = {
   id: string;
@@ -99,7 +99,10 @@ export function Room() {
               </div>
             ) : (
               <span>
-                Para enviar uma pergunta, <button>faça seu login.</button>
+                Para enviar uma pergunta,{" "}
+                <button onClick={() => (window.location.href = "/")}>
+                  faça seu login.
+                </button>
               </span>
             )}
             <Button type="submit" disabled={!user}>
