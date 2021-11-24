@@ -1,14 +1,14 @@
 <p align="center">
-  <img alt="Letmeask" src=".github/logo.svg" width="160px">
+  <img alt="Letmeask" src="src/assets/logo.svg" width="160px">
 </p>
 
 <h1 align="center">
-    <img alt="Letmeask" src=".github/github.png" />
+    <img alt="Letmeask" src="src/assets/github.png" />
 </h1>
 
 <br>
 
-## 🧪 Tecnologias
+## 🧪 Technologies
 
 This project was developed with the following technologies:
 
@@ -18,17 +18,20 @@ This project was developed with the following technologies:
 
 ## 🚀 Features added by me 
 
--Login with github
--Logout Feature
--Modals
--Responsive(In process)
--PWA(In process)
+Some features I added to the project:
+
+- Login with github<br/>
+- Logout Feature<br/>
+- Modals<br/>
+- Responsive (In process)<br/>
+- Styled Components (In process) <br/>
+- PWA (In process)<br/>
 
 ## ✈️ Installation and use
 
 ```bash
 # Open a terminal and copy this repository with the command
-git clone https://github.com/Brunoocn/Dtmoney.git
+git clone https://github.com/Brunoocn/Letmeask.git
 # or use the download option.
 # Open the folder with
 cd Letmeask
